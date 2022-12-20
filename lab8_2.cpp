@@ -22,7 +22,7 @@ Fahsai: 555+ see you Next Monday. Bye Bye \(^ ^)/
 using namespace std;
 
 int main(){
-    string name, movie, day, msg, id, i;
+    string name, movie, day, msg, id, id_value;
     int real_id;
     cout << "Fahsai: Sawadee ka...Can you tell me your name?" << endl;
     cout << "?????: ";
@@ -31,9 +31,9 @@ int main(){
     cout << "Fahsai: I think you are an Engineering student. What is your student ID?" << endl;   
     cout << name << ": ";
     getline(cin, id);
-    i = id[0];
-    i += id[1]; 
-    real_id = stoi(i) - 12;
+    id_value = id[0];
+    id_value += id[1]; 
+    real_id = stoi(id_value) - 12;
     cout << "Fahsai: I think you may be GEAR "<< real_id << ". I have a free movie ticket for you." << endl;
     cout << "Fahsai: Let's go to the cinema together!!!" << endl;
     cout << "Fahsai: What movie do you want to watch?" << endl;
